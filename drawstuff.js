@@ -77,10 +77,10 @@ function main() {
     var h = context.canvas.height;  // as set in html
     var imagedata = context.createImageData(w,h);
  
-    // Draw a rectangle with pixels
-    var c = new Color(0,0,0,255); // the color at the pixel: black opaque
-    for (var x=50; x<100; x++) 
-        for (var y=50; y<75; y++) {
+    // Draw a larger blue rectangle at a new position
+    var c = new Color(37,99,235,255); // bright blue, fully opaque
+    for (var x=96; x<416; x++)
+        for (var y=144; y<368; y++) {
             drawPixel(imagedata,x,y,c);
             // console.log("draw at " +x+ " " +y);
         }
